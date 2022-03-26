@@ -32,39 +32,10 @@
 			</script>
 
 
-    <div id="phone_hide">
-        <script>
-            window.addEventListener('DOMContentLoaded', (event) => {
-                const playerCount = document.getElementById('total-player-count');
-                fetch('https://api.mcsrvstat.us/2/pixelmontogo.com').then(res => res.json()).then(res => {
-                    if (res && res.players && res.players.online) {
-                        playerCount.textContent = res.players.online;
-                    } else {
-                        playerCount.textContent = "??";
-                    }
-                }).catch(e => {
-                    playerCount.textContent = "??";
-                });
-
-                const downloadLink = document.getElementById('download-pixelmon');
-                const platform = document.getElementById('platform');
-                if (navigator.userAgent.indexOf('Mac OS X') !== -1) {
-                    downloadLink.href = "https://cdn.pixelmontogo.com/launcher/PixelmonToGoLauncher-mac.dmg";
-                    platform.textContent = "(MAC)";
-                } else {
-                    downloadLink.href = "https://cdn.pixelmontogo.com/launcher/Pixelmon%20To%20Go%20Launcher%20Setup.exe";
-                    platform.textContent = "(WINDOWS)";
-                }
-            });
-
-            function downloadLink() {
-
-            }
-        </script>
-		
+    <body id="phone_hide">
         <div id="wrapper">
             <header class="index">
-                <div id="wrapper">
+                <div id="wrapper-1">
                     <header class="index">
                         <div id="header" class="clear">
                             <i class="top-light"></i>
@@ -82,13 +53,11 @@
                                                 <li><a href="index.html">Home</a></li>
                                                 <li class="shop-v"><a href="https://store.pixelmontogo.com/">Store</a></li>
                                                 <li><a href="https://store.pixelmontogo.com/category/ranks-1">Premium</a></li>
-                                                <!--<li><a href="Virtual_Reality.php" >Virtual Reality</a></li>-->
                                                 <li><a href="#anchor-point">How to play</a></li>
                                                 <li><a target="_blank" href="https://twitter.com/PixelmonToGo">Twitter</a></li>
 												 <li id="Discordtop" ><a href="https://discord.gg/2TdCupu">discord<i id="Discord" class="youtube"></i></a></li>
-                                                <li id="Youtubetop" ><a target="_blank" href="https://www.youtube.com/channel/UCBj4JgPwTWnmNW6S7ffytQQ?view_as=subscriber">Youtube<i class="youtube"></i></a></li>
+                                                <li id="Youtubetop" ><a target="_blank" href="https://www.youtube.com/channel/UCBj4JgPwTWnmNW6S7ffytQQ?view_as=subscriber">Youtube<i  class="youtube"></i></a></li>
                                             </ul>
-                                            <!--<a class="login"><img src="assets/images/login.svg" alt=""></a>-->
                                         </div>
                                     </div>
                                 </div>
@@ -131,9 +100,6 @@
                                         <h3>DOWNLOAD PIXELMON <span id="platform"></span></h3>
                                     </a>
 
-                                    <!--<div id="launcher-pokemon">
-                                    <img alt="pokemon" class="laucher_icon" src="media/man-head-4.png">
-                                </div>-->
                                 </div>
                                 <div id="carousel-item-2" class="hidden">
                                     <h1 class="carousel-title">TOURNAMENTS</h1>
@@ -252,13 +218,11 @@
 
                             <div id="choose-server-players">
                                 <div id="choose-server-players-na">
-                                    <!--<h5>Players Online</h5>
-                            <h4>602 out of 1000</h4>-->
+
                                 </div>
 
                                 <div id="choose-server-players-eu">
-                                    <!--<h5>Players Online</h5>
-                            <h4>824 out of 1000</h4>-->
+
                                 </div>
                             </div>
                         </div>
@@ -285,16 +249,35 @@
                     </section>
                     <!-------------------------------------- JAVASCRIPT -------------------------------------------------->
                     <script src="js/carousel.js"></script>
-                    <!-- <script src="js/installation-guide.js"></script> -->
+
                     <script src="js/preload-images.js"></script>
                 </div>
+            </header>
+        </div>
+        <script>
+            window.addEventListener('DOMContentLoaded', (event) => {
+                const playerCount = document.getElementById('total-player-count');
+                fetch('https://api.mcsrvstat.us/2/pixelmontogo.com').then(res => res.json()).then(res => {
+                    if (res && res.players && res.players.online) {
+                        playerCount.textContent = res.players.online;
+                    } else {
+                        playerCount.textContent = "??";
+                    }
+                }).catch(e => {
+                    playerCount.textContent = "??";
+                });
 
+                const downloadLink = document.getElementById('download-pixelmon');
+                const platform = document.getElementById('platform');
+                if (navigator.userAgent.indexOf('Mac OS X') !== -1) {
+                    downloadLink.href = "https://cdn.pixelmontogo.com/launcher/PixelmonToGoLauncher-mac.dmg";
+                    platform.textContent = "(MAC)";
+                } else {
+                    downloadLink.href = "https://cdn.pixelmontogo.com/launcher/Pixelmon%20To%20Go%20Launcher%20Setup.exe";
+                    platform.textContent = "(WINDOWS)";
+                }
+            });
 
-
-
-
-
-
-</body>
-
+        </script>
+    </body>
 </html>

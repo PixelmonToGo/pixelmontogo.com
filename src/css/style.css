@@ -12,7 +12,7 @@ body {
     overflow-x: hidden;
 }
 
-#wrapper {
+#wrapper-1 {
     display: flex;
     flex-wrap: wrap;
 }
@@ -876,18 +876,7 @@ h4 {
     margin-bottom: -0.5em;
 }
 
-.how-to-install-content-mid {
-    width: 100%;
-    height: 60%;
-    border-bottom: 0.7em solid rgba(0, 0, 0, 0.4);
-    border-top: 0.7em solid rgba(0, 0, 0, 0.4);
-}
 
-.how-to-install-content-mid video {
-    width: 100%;
-    height: 100%;
-    outline: none;
-}
 
 #step-1,
 #step-2,
@@ -908,26 +897,6 @@ h4 {
     display: none;
 }
 
-#step-1 .how-to-install-content-mid {
-    background: url(../media/installation-guide-download.png) no-repeat center;
-    background-size: cover;
-}
-
-#step-2 .how-to-install-content-mid {
-    background: url(../media/installation-guide-warning.png) no-repeat center;
-    background-size: cover;
-}
-
-#step-3 .how-to-install-content-mid {
-    background: url(../media/installation-guide-install.png) no-repeat center;
-    background-size: cover;
-}
-
-#step-4 .how-to-install-content-mid {
-    background: url(../media/installation-guide-install.png) no-repeat center;
-    background-size: cover;
-}
-
 .how-to-install-content-bot {
     width: 100%;
     height: 15%;
@@ -939,27 +908,6 @@ h4 {
     padding: 0 40%;
 }
 
-.borito {
-    top: 6em;
-    position: absolute;
-    left: 2.5em;
-    padding: 0.1em 2em 0.1em 2em;
-    color: #85858500;
-    background-image: url(../media/button.png);
-    background-repeat: no-repeat;
-    background-size: 101% 100%;
-    background-position-x: -0.04em;
-    border: none;
-    font-weight: bold;
-    font-size: 4em;
-}
-
-.borito:hover {
-    background-image: url(../media/buttononclick.png);
-    background-size: 130% 164%;
-    background-position-x: -0.82em;
-    background-position-y: -0.367em;
-}
 
 .how-to-install-content-bot span {
     width: 0.6em;
@@ -1126,15 +1074,6 @@ footer p {
     }
 }
 
-#donate {
-    position: relative;
-    background: url(/media/backgroundshop.png) no-repeat bottom center;
-    overflow: hidden;
-    box-shadow: inset white 0px 137px 71px -28px;
-    background-size: cover;
-    height: 50em;
-}
-
 #header {
     position: relative;
     overflow: hidden;
@@ -1155,51 +1094,6 @@ footer p {
 
 #profilecontent.pb0 {
     padding-bottom: 0;
-}
-
-i.bg-head-1 {
-    background: url(../media/bg-head-1.jpg) no-repeat bottom center;
-    position: absolute;
-    width: 100%;
-    height: 1000px;
-    top: -220px;
-    left: 0;
-}
-
-i.bg-head-1-download {
-    background: url(../media/download-bg.jpg) no-repeat bottom center;
-    position: absolute;
-    width: 100%;
-    height: 1000px;
-    top: -220px;
-    left: 0;
-}
-
-i.bg-head-2 {
-    background: url(../media/bg-head-2.png) no-repeat bottom center;
-    position: absolute;
-    width: 100%;
-    height: 1000px;
-    top: -220px;
-    left: 0;
-}
-
-i.bg-head-3 {
-    background: url(../media/bg-head-3.jpg) no-repeat bottom center;
-    position: absolute;
-    width: 100%;
-    height: 1000px;
-    top: -220px;
-    left: 0;
-}
-
-i.bg-head-4 {
-    background: url(../media/bg-head-4.png) no-repeat bottom center;
-    position: absolute;
-    width: 100%;
-    height: 1000px;
-    top: -220px;
-    left: 0;
 }
 
 .owl-carousel .owl-stage-outer {
@@ -1429,16 +1323,6 @@ i.bg-head-4 {
     transform: translateY(0px);
 }
 
-.top-light {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    left: 0;
-    background: url(../media/head-top-light.png) repeat-x;
-    height: 285px;
-    z-index: 20;
-}
-
 .large-title {
     font-size: 120px;
     line-height: 110px;
@@ -1454,34 +1338,6 @@ i.bg-head-4 {
     z-index: 40;
     transform: skewY(-4deg);
     top: -20px;
-}
-
-.yellow-line {
-    background: url(../media/yellow-line-head-1.png) no-repeat;
-    width: 1205px;
-    height: 320px;
-    display: block;
-    position: absolute;
-    z-index: 20;
-    top: 0;
-    left: 50%;
-    margin-left: -602px;
-}
-
-.yellow-line.download-line {
-    background: url(../media/download-yellow-line.png) no-repeat;
-}
-
-.yellow-line.line-2 {
-    background: url(../media/yellow-line-head-2.png) no-repeat;
-}
-
-.yellow-line.line-3 {
-    background: url(../media/yellow-line-head-3.png) no-repeat;
-}
-
-.yellow-line.line-4 {
-    background: url(../media/yellow-line-head-4.png) no-repeat;
 }
 
 .buttons-wrap {
@@ -1682,21 +1538,6 @@ i.bg-head-4 {
 .middle-info {
     position: relative;
     margin: 130px 0 0;
-}
-
-.person-head {
-    background: url(../media/man-head-1.png) no-repeat;
-    width: 624px;
-    height: 759px;
-    position: absolute;
-    display: block;
-    z-index: 100;
-    right: -110px;
-    top: -121px;
-}
-
-.person-head.person-download {
-    background: url(../media/download-man.png) no-repeat;
 }
 
 .person-head.person-2 {
@@ -1940,19 +1781,6 @@ a.-copy:active {
     margin: 0;
 }
 
-#steps {
-    background: url(../media/bg-steps.png) no-repeat top center;
-    padding-top: 340px;
-    margin-top: -340px;
-    padding-bottom: 150px;
-    overflow: hidden;
-    position: relative;
-}
-
-#steps>.container {
-    position: relative;
-}
-
 .dog-wrap {
     display: inline-block;
     margin-top: -500px;
@@ -1973,16 +1801,6 @@ a.-copy:active {
     top: -299px;
     right: -93px;
     transform: rotate(46deg);
-}
-
-.dog-wrap .dog-show {
-    position: absolute;
-    z-index: 1000;
-    background: url(../media/dog-show.png) no-repeat;
-    width: 183px;
-    height: 156px;
-    top: 0;
-    right: 42px;
 }
 
 .geometrica {
@@ -2040,18 +1858,6 @@ a.-copy:active {
     margin-left: -25px;
     font-size: 18px;
     font-weight: 800;
-}
-
-.steps-grid>div:first-child {
-    background: url(../media/bg-step-1.jpg) no-repeat center center;
-}
-
-.steps-grid>div:nth-child(2) {
-    background: url(../media/bg-step-2.jpg) no-repeat center center;
-}
-
-.steps-grid>div:last-child {
-    background: url(../media/bg-step-3.jpg) no-repeat center center;
 }
 
 .white-but {
@@ -2121,28 +1927,6 @@ a.-copy:active {
     background: url(../media/bg-social.png) no-repeat bottom center;
     padding: 100px 0;
     box-shadow: inset white 0px 153px 70px 0px;
-}
-
-.steps-car {
-    background: url(../media/steps-car.png) no-repeat;
-    width: 794px;
-    height: 380px;
-    display: block;
-    position: absolute;
-    right: -120px;
-    bottom: -100px;
-    z-index: 130;
-    pointer-events: none;
-}
-
-.step-money-blur {
-    background: url(../media/step-money-blur.png) no-repeat;
-    width: 204px;
-    height: 225px;
-    position: absolute;
-    bottom: 20%;
-    right: -60px;
-    z-index: 150;
 }
 
 .social-mans {
@@ -2396,23 +2180,6 @@ a.-copy:active {
     opacity: 1;
 }
 
-#donate {
-    position: relative;
-    background: url(/adfocusad/media/imgbar1.png) no-repeat bottom center;
-    overflow: hidden;
-    box-shadow: inset white 0px 137px 71px -28px;
-    background-size: cover;
-    height: 50em;
-}
-
-#login {
-    position: relative;
-    background: url(../media/bg-login.jpg) no-repeat bottom center;
-    padding: 50px 0 100px;
-    overflow: hidden;
-    box-shadow: inset white 0px 71px 39px -20px;
-}
-
 .donate-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -2446,21 +2213,6 @@ a.-copy:active {
 
 .color-box {
     position: relative;
-}
-
-.color-box .bg-color {
-    position: absolute;
-    width: 116%;
-    height: 100%;
-    transform: skewY(-4deg);
-    background: url(../media/donate-form-bg.jpg) no-repeat center center;
-    display: block;
-    z-index: 10;
-}
-
-.color-box .bg-color.loginer {
-    background: url(../media/login-form-bg.jpg) no-repeat center center;
-    background-size: auto 100%;
 }
 
 .cosmetB {
@@ -2665,38 +2417,6 @@ a.-copy:active {
     top: -64px;
 }
 
-.products-grid.long>div .fly.blackfriday-fly {
-    background: url(../media/blackfriday.png) no-repeat;
-}
-
-.products-grid.long>div .fly.newyear-fly-1 {
-    background: url(../media/newyear1-product-fly.png) no-repeat;
-}
-
-.products-grid.long>div .fly.newyear-fly-2 {
-    background: url(../media/newyear2-product-fly.png) no-repeat;
-}
-
-.products-grid.long>div .fly.newyear-fly-3 {
-    background: url(../media/newyear3-product-fly.png) no-repeat;
-}
-
-.products-grid.long>div .fly.egypt-fly {
-    background: url(../media/egypt-poduct-fly.png) no-repeat;
-}
-
-.products-grid.long>div .fly.feb23-fly {
-    background: url(../media/23feb-poduct-fly.png) no-repeat;
-}
-
-.products-grid.long>div .fly.may-fly {
-    background: url(../media/9may-product-fly.png) no-repeat;
-}
-
-.products-grid.long>div .fly.happy-fly {
-    background: url(../media/happy-poduct-fly.png) no-repeat;
-}
-
 .products-grid.long>div .gameprice {
     margin-bottom: 4px !important;
 }
@@ -2705,10 +2425,6 @@ a.-copy:active {
     font-size: 18px;
     font-weight: bold;
     margin-bottom: 20px;
-}
-
-.products-grid.long>div:before {
-    background: url(../media/donate-form-bg-train.jpg) no-repeat center center;
 }
 
 .products-grid.blackfriday {
@@ -2776,17 +2492,6 @@ a.-copy:active {
     top: 0;
     left: 50%;
     transform: translate(-50%, -60%);
-}
-
-.products-grid>div:before {
-    content: '';
-    position: absolute;
-    z-index: 1 !important;
-    display: block;
-    width: 100%;
-    height: 100%;
-    transform: skewY(-4deg);
-    background: url(../media/product-bg.jpg) no-repeat center center;
 }
 
 .products-grid>div .gameprice {
@@ -3073,11 +2778,6 @@ a.-copy:active {
 
 .quit:hover {
     color: #ffde2a;
-}
-
-#profilecontent {
-    background: #f1f4f9 url(../media/bg-profile.jpg) no-repeat top center;
-    padding-top: 200px;
 }
 
 .title-info-grid {
@@ -3825,13 +3525,6 @@ p.text {
         -webkit-transform: rotate(2880deg);
         transform: rotate(2880deg);
     }
-}
-
-#roulette_block {
-    padding-bottom: 200px;
-    padding-top: 100px;
-    position: relative;
-    background: url(../media/bg-donate-backup.jpg) no-repeat bottom center;
 }
 
 #roulette li span img {
