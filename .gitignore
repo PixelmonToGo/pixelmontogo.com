@@ -1,3 +1,4 @@
 report/
 mega-linter.log
 ./idea
+.idea/workspace.xml
