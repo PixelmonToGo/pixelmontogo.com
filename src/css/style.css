@@ -131,7 +131,7 @@ svg{
 
 .carousel-main{
   text-transform: uppercase;
-  font-size: 70px;
+  font-size: 75px;
   padding: 25px 40px;
   text-align: center;
   color: #1b1b1b;
@@ -164,7 +164,7 @@ svg{
 }
 
 .carousel-desc span {
-  font-size: 35px;
+  font-size: 40px;
   margin: 5px 20px;
 }
 
@@ -201,7 +201,7 @@ svg{
   text-decoration: none;
   top: 14.3em;
   left: 1em;
-  font-size: 1.65rem;
+  font-size: 1.75rem;
   max-width: 500px;
   transition: 0.5s transform ease-in-out;
   cursor: pointer;
@@ -264,7 +264,7 @@ svg{
 
 /* Section Text (Choose your server...)*/
 .section-text{
-  font-size: 50px;
+  font-size: 60px;
   transform: skewY(-5deg);
   text-align: center;
 }
@@ -312,7 +312,7 @@ svg{
 }
 
 .web-description-element{
-  font-size: 25px;
+  font-size: 30px;
   width: 40%;
   color: #202020;
 }
@@ -412,25 +412,24 @@ svg{
 .section-title{
   text-transform: uppercase;
   font-family: 'Bangers', cursive;
-  font-size: 6vh;
+  font-size: 9.558528vh;
   color: white;
-  text-shadow: 3px 3px 1px rgba(0, 0, 0, 0.164);
+  text-shadow: 5px 5px 1px rgba(0, 0, 0, 0.25);
   letter-spacing: 0.05em;
   position: relative;
-  font-weight: 500;
 }
 .section-title p{
-  font-size: 7vh;
+  font-size: 8.558528vh;
   font-family: 'Bangers', cursive;
   text-shadow: 5px 5px 1px rgba(0, 0, 0, 0.25);
 
 }
 
 .section-description{
-  font-size: 27px;
+  font-size: 28px;
   margin-top: 25px;
   color: rgb(223, 222, 222);
-  letter-spacing: 0.02em;
+  letter-spacing: 0.05em;
 }
 
 .videos-container .bottom-img {
@@ -563,18 +562,11 @@ svg{
 }
 
 @media (max-width: 500px){
-  .section-title{
-    font-size: 40px;
-    text-align: center;
-  }
-  .section-description{
-    font-size: 24px;
-    text-align: center;
-  }
-  .box-1, .box-2{
-    padding: 0 !important;
-  }
 
+  .seciton-title image{
+    height: 20px;
+    width: 20px;
+  }
   .container{
     max-width: 95%;
     width: 95%;
@@ -588,6 +580,9 @@ svg{
   }
   .carousel-main * {
     font-size: 20px !important;
+  }
+  .box-1 img{
+    max-height: 200px;
   }
   
   /* Navbar */
@@ -622,12 +617,15 @@ svg{
     height: auto;
   }
   .section-title{
-    font-size: 70px !important;
+    font-size: 25px !important;
     word-break: break-word;
   }
   .seciton-title p {
     font-size: 50px !important;
     word-break: break-word;
+  }
+  .section-description{
+    font-size: 15px;
   }
   
 }
