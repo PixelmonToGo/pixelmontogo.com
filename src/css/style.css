@@ -557,12 +557,9 @@ svg {
     margin-top: 0 !important;
   }
   .discord-inv{
-    margin-left: 11px !important;
-  }
-
-  .discord-inv{
     padding: 0 !important;
     margin: 0 !important;
+    margin-left: 11px !important;
   }
   .discord-inv *{
     text-align: center;
