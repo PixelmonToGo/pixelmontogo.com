@@ -375,13 +375,10 @@ svg {
   color: #1b1b1b !important;
 }
 
-
-.discord-logo-l-s{
+.discord-logo-l-s {
   max-height: 120px !important;
   max-width: 120px;
-
   width: 5vw;
-
   position: relative;
   top: 10px;
 }
@@ -481,6 +478,7 @@ svg {
   display: none;
   margin: 50px auto;
 }
+
 .bannerposition {
   position: relative;
   top: 2vh;
@@ -499,10 +497,9 @@ svg {
     flex-direction: column;
   }
 
-  .discord-logo-l-s{
+  .discord-logo-l-s {
     min-height: 85px !important;
     min-width: 85px;
-  
     width: 6vw !important;
   }
 
@@ -533,7 +530,7 @@ svg {
     width: 100%;
     padding-left: 1px;
     text-align: center;
-}
+  }
 }
 
 @media (max-width: 800px) {
@@ -541,27 +538,33 @@ svg {
   .widget-pc {
     display: none;
   }
+
   .widget-mob {
     display: flex;
   }
-  .discord-invite-btn-cont{
+
+  .discord-invite-btn-cont {
     margin-top: 20px !important;
     display: flex;
     align-items: center;
     justify-content: center;
   }
+
   .discord-invite-btn-cont img {
     width: 75% !important;
   }
-  .box-2{
+
+  .box-2 {
     margin-top: 0 !important;
   }
-  .discord-inv{
+
+  .discord-inv {
     padding: 0 !important;
     margin: 0 !important;
     margin-left: 11px !important;
   }
-  .discord-inv *{
+
+  .discord-inv * {
     text-align: center;
   }
 
@@ -613,31 +616,36 @@ svg {
     height: 20px;
     width: 20px;
   }
+
   .bannerposition {
     position: relative;
     top: 1vh;
   }
+
   img.yt-vid-img {
     max-height: 200px;
   }
+
   .box-2.pr-2 {
     margin-bottom: 1vh;
     padding-top: 7px;
     padding-right: 1px;
   }
+
   section.videos-container.color-2 {
     margin-bottom: -1vh;
   }
-  .discord-inv{
+
+  .discord-inv {
     padding: 0 !important;
   }
-  .discord-logo-l-s{
+
+  .discord-logo-l-s {
     min-height: 40px !important;
     min-width: 40px;
-  
     width: 6vw !important;
   }
-  
+
   .container {
     max-width: 95%;
     width: 95%;
@@ -712,9 +720,10 @@ svg {
     font-size: 15px;
   }
 
-  .discord-invite-btn-cont{
+  .discord-invite-btn-cont {
     margin-top: 20px !important;
   }
+
   .discord-invite-btn-cont img {
     width: 75% !important;
   }
