@@ -1,0 +1,28 @@
+---
+name: Deploy Website
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - src/**
+
+jobs:
+  upload-manifests:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 1
+          token: ${{ secrets.PAT }}
+      - name: Upload Manifests to R3
+        uses: jakejarvis/s3-sync-action@master
+        env:
+          AWS_S3_BUCKET: website
+          AWS_S3_ENDPOINT: ${{ secrets.CLOUDFLARE_R2_CDN_ENDPOINT }}
+          AWS_ACCESS_KEY_ID: ${{ secrets.CLOUDFLARE_R2_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.CLOUDFLARE_R2_SECRET_ACCESS_KEY }}
+          SOURCE_DIR: src
