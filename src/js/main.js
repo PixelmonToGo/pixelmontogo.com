@@ -88,9 +88,9 @@ if (navigator.userAgent.indexOf('Mac OS X') !== -1) {
   downloadLink.href = 'https://pixelmontogo.com/download/PixelmonToGoLauncher-mac.dmg'
   platform.textContent = 'DOWNLOAD PIXELMON (MAC)'
 } else if (navigator.userAgent.indexOf('Linux') !== -1) {
-  downloadLink.href = 'https://pixelmontogo.com/download/Pixelmon%20To%20Go%20Launcher.AppImage'
+  downloadLink.href = 'https://pixelmontogo.com/download/PixelmonToGoLauncher-linux.AppImage'
   platform.textContent = 'DOWNLOAD PIXELMON (LINUX)'
 } else {
-  downloadLink.href = 'https://pixelmontogo.com/download/Pixelmon%20To%20Go%20Launcher%20Setup.exe'
+  downloadLink.href = 'https://pixelmontogo.com/download/PixelmonToGoLauncher-windows.exe'
   platform.textContent = 'DOWNLOAD PIXELMON (WINDOWS)'
 }
