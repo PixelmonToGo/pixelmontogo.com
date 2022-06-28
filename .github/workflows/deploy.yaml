@@ -17,6 +17,7 @@ jobs:
         uses: actions/checkout@v3
         with:
           fetch-depth: 1
+          lfs: true
           token: ${{ secrets.PAT }}
       - name: Upload Manifests to R3
         uses: jakejarvis/s3-sync-action@master

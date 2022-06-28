@@ -85,12 +85,12 @@ document.querySelector('body').addEventListener('scroll', function (e) {
 const downloadLink = document.getElementById('download-pixelmon')
 const platform = document.getElementById('platform')
 if (navigator.userAgent.indexOf('Mac OS X') !== -1) {
-  downloadLink.href = 'https://cdn.pixelmontogo.com/launcher/PixelmonToGoLauncher-mac.dmg'
+  downloadLink.href = 'https://pixelmontogo.com/download/PixelmonToGoLauncher-mac.dmg'
   platform.textContent = 'DOWNLOAD PIXELMON (MAC)'
 } else if (navigator.userAgent.indexOf('Linux') !== -1) {
-  downloadLink.href = 'https://cdn.pixelmontogo.com/launcher/Pixelmon%20To%20Go%20Launcher.AppImage'
+  downloadLink.href = 'https://pixelmontogo.com/download/Pixelmon%20To%20Go%20Launcher.AppImage'
   platform.textContent = 'DOWNLOAD PIXELMON (LINUX)'
 } else {
-  downloadLink.href = 'https://PixelmonToGo.b-cdn.net/launcher/Pixelmon%20To%20Go%20Launcher%20Setup.exe'
+  downloadLink.href = 'https://pixelmontogo.com/download/Pixelmon%20To%20Go%20Launcher%20Setup.exe'
   platform.textContent = 'DOWNLOAD PIXELMON (WINDOWS)'
 }
